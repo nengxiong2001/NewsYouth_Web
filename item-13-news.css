@@ -65,7 +65,9 @@ hr{
 .times-btn{
     display: none;
 }
-
+.web-name{
+    z-index: +999;
+}
 .nav-bar{
     background: #333;
     height: 0;

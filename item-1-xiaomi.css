@@ -32,7 +32,9 @@ img{
 ul{
     list-style: none;
 }
-
+.web-name{
+    z-index: +999;
+}
 a{
     text-decoration: none;
     color: #000;
@@ -78,7 +80,8 @@ hr{
 /********************/
 .nav-bar {
     position: relative;
-    right: 150px;
+    right: 220px;
+    font-size: 20px;
 }
 .nav-bar ul li{
     text-align: center;

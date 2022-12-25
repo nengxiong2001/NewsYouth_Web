@@ -46,7 +46,9 @@ hr{
     width: 95vw;
     margin: 0 auto;
 }
-
+.web-name{
+    z-index: +999;
+}
 /* header */
 .top-head{
     display: flex;
@@ -82,9 +84,14 @@ hr{
 /********************/
 .nav-bar {
     position: relative;
-    right: 150px;
+    right: 220px;
+    font-size: 20px;
+}
+nav ul li .hide{
+    color: red;
 }
 .nav-bar ul li{
+
     text-align: center;
     display: block;
     padding: 15px 0;

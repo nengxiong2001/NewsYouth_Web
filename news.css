@@ -63,7 +63,9 @@ hr{
     height: 0;
     overflow: hidden;
 }
-
+.web-name{
+    z-index: +999;
+}
 .show-nav{
     height: auto;
 }
