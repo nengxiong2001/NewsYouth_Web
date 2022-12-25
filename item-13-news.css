@@ -29,6 +29,7 @@ body{
 img{
     width: 100%;
 }
+
 ul{
     list-style: none;
 }
@@ -124,9 +125,13 @@ hr{
 
 .main-container-left .topic{
     position: relative;
-    text-decoration: underline;
     font-size: 30px;
-    width: 127px;
+    padding: 1px 0 0 5px;
+    border-radius: 3px;
+    width: 150px;
+    color: #808080;
+    /* background-color: yellow; */
+    box-shadow: -2px 2px 2px #808080;
 }
 .main-container-left p{
     text-align: justify;
@@ -185,6 +190,9 @@ hr{
 
 .main-container-right article div{
     margin-right: 10px;
+}
+.main-container-right article a:hover{
+    color: #7ac64d;
 }
 
 /* body end  */
