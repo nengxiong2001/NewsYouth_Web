@@ -19,6 +19,10 @@ body{
     /* font-family: 'Raleway', sans-serif; */
     font-family: 'Noto Sans Lao', sans-serif;
     background: #fff;
+    /* background-image: url(https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHRlY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60); */
+    background-repeat: repeat;
+    background-size: cover;
+    /* background-size: 1300px auto; */
 }
 
 /* global styling */
@@ -78,7 +82,7 @@ hr{
 /********************/
 .nav-bar {
     position: relative;
-    right: 100px;
+    right: 150px;
 }
 .nav-bar ul li{
     text-align: center;
@@ -126,12 +130,12 @@ hr{
 }
 .banner-main-content h2{
     font-family: 'Noto Sans Lao', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: var(--heading);
 }
 .banner-main-content img{
     position: relative;
-    top: 10px;
+    top: 11.8px;
     width: 190px;
     height: auto;
 }
@@ -154,21 +158,25 @@ hr{
 
 .current-news-head{
     background: #fff;
+    box-shadow: 2px 2px 4px #333;
+    border-radius: 5px;
     padding: 20px;
-    font-size: 12px;
-    margin: 20px 0;
+    font-size: 14px;
+    margin: 30px 0;
+    height: 425px;
 }
 
 .current-news-head h3{
     padding: 6px;
-    cursor: pointer;
+    /* cursor: pointer; */
     position: relative;
 }
 
 .current-news-head h3:hover::before{
     content: ">> ";
     position: absolute;
-    left: -12px;
+    text-shadow: 2px 2px 2px #333;
+    left: -22px;
 }
 
 .current-news-head span{
@@ -279,6 +287,13 @@ main a:hover{
     font-weight: 300;
 }
 
+.main-container-left .hand-on img{
+    width: auto;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #333;
+}
+
 .main-container-left article{
     padding: 10px;
 }
@@ -287,18 +302,28 @@ main a:hover{
     padding: 15px 30px;
 }
 
+.container-top-left .davinci img{
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #333;
+}
+
 .container-bottom-left{
-    background: #f3f3f3;
+    background: #fff;
+    box-shadow: 2px 2px 5px rgb(100, 100, 100);
+    border-radius: 5px;
     margin: 15px 30px;
 }
-.container-bottom-left .img{
+.container-bottom-left .xiaomi img{
     width: 268px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #333;
 }
 
 /*** main container right */
 
 .main-container-right{
     padding: 30px 10px;
+    /* background-color: #7ac64d; */
 }
 
 .main-container-right > h2{
@@ -312,14 +337,21 @@ main a:hover{
     border-bottom: 1px solid #7ac64d;
 }
 
-.main-container-right article:last-child{
+/* .main-container-right article:last-child{
     border-bottom: none;
-}
+} */
 
 .main-container-right img{
+    /* border: #7ac64d solid 2px; */
+    box-shadow: 2px 2px 3px #333;
+    border-radius: 5px;
     width: 100px;
     height: 100px;
     align-self: center;
+}
+.main-container-right img:hover{
+    width: 105px;
+    height: 105px;
 }
 
 .main-container-right h4{
@@ -331,7 +363,7 @@ main a:hover{
 }
 
 .main-container-right article h2{
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 0;
     font-family: var(--heading);
 }
@@ -343,6 +375,9 @@ main a:hover{
 
 .main-container-right article div{
     margin-right: 10px;
+}
+.main-container-right article h4{
+    font-size: 16px;
 }
 
 
@@ -448,6 +483,7 @@ footer .end-footer a{
     }
 
     .main-container-right article h4{
+        font-size: 20px;
         grid-row: 1/2;
         grid-column: 1/2;
         align-self: flex-start;
@@ -457,19 +493,39 @@ footer .end-footer a{
         grid-row: 1/3;
         grid-column: 2/3;
     }
-    .main-container-right article img{
-        background-color: red;
-    }
 }
 
 
 @media(min-width: 768px){
     .banner-sub-content{
+        position: relative;
+        right: 12px;
+        background-color: #f3f3f3;
+        box-shadow: 2px 2px 5px #333;
+        /* background-image: url(https://images.unsplash.com/photo-1661961110144-12ac85918e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MTV8fHRlY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60); */
+        border-radius: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     .banner-sub-content img{
-        filter: brightness(50%);
+        filter: brightness(70%);
+        border-radius: 20px;
+        width: 390px;
+        height: 280px;
+        margin: 0 0 20px 0;
+        box-shadow: 2px 2px 4px #333;
+    }
+    .banner-sub-content a{
+        opacity: 70%;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 2px 0;
+    }
+    .banner-sub-content a:hover{
+        opacity: 90%;
+        background-color: rgb(126, 214, 255);
+        color: #000;
+        
     }
 
     .container-bottom-left{
