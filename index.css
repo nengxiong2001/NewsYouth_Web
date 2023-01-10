@@ -84,7 +84,7 @@ hr{
 /********************/
 .nav-bar {
     position: relative;
-    right: 220px;
+    right: 150px;
     font-size: 20px;
 }
 nav ul li .hide{
@@ -529,6 +529,9 @@ footer .end-footer a{
         padding: 2px 0;
     }
     .banner-sub-content a:hover{
+        position: relative;
+        bottom: 1px;
+        right: 1px;
         opacity: 90%;
         background-color: rgb(126, 214, 255);
         color: #000;
